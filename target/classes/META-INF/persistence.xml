@@ -1,0 +1,16 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
+    <persistence-unit name="lunchApp" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+                
+        <properties>
+            <!-- Connection Info comes from SI properties file, jdbc_customer.properties  -->
+            <property name="hibernate.max_fetch_depth" value="3"/>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="false"/>
+            <property name="hibernate.use_sql_comments" value="false"/>
+
+            <property name="hibernate.default_batch_fetch_size" value="100" />
+            <property name="hibernate.jdbc.batch_size" value="100" />
+        </properties>
+    </persistence-unit>
+</persistence>

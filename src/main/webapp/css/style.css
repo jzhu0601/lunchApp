@@ -1,0 +1,91 @@
+@import '../js/dojo/resources/dojo.css';
+@import '../js/dijit/themes/claro/claro.css';
+@import '../js/dgrid/css/dgrid.css';
+html,body{
+    height:100%;margin:0;padding:0
+}
+.lunchAppContainer{
+    height:100%;
+}
+.loading{
+    font-size:1.5em;text-align:center;
+}
+.loaded .loading{
+    display:none
+}
+
+.textboxWidth{
+    width:50%;
+    min-width:150px;
+}
+
+.restaurantGridFooter{
+    background-color: #DDD;
+    height:40px;
+    text-align: center;
+}
+.claro .dijitContentPane{
+    padding:0px !important;
+}
+
+.sideByside{
+    display:inline-block !important;
+}
+.center{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.boxy{
+    display:inline-block;
+    /*float:left !important;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 40%;
+    background-color: white;
+   
+}  
+.boxy {
+    overflow: hidden;
+   // margin: 10px;
+}
+
+.boxy:hover {
+    cursor: pointer;
+}
+
+.morph {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.morph:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.sugprofile{
+    padding-bottom:15px;
+}
+
+.map-canvas{
+/*   width: 500px;
+      height: 400px;
+    */
+}
+iframe:focus { 
+    outline: none;
+}
+
+iframe[seamless] { 
+    display: block;
+}
